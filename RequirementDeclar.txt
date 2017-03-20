@@ -1,0 +1,25 @@
+Requirments
+#1
+#2: Define two kinds of DB in project2. 
+static DBEngine<string, DBElement<string, PL_ListOfStrings>> csdb = new DBEngine<string, DBElement<string, PL_ListOfStrings>>();
+static DBEngine<int, DBElement<int, PL_String>> csdbint = new DBEngine<int, DBElement<int, PL_String>>();
+
+#3: Client1, Client2, WpfClient, Server should be startup.
+Client1 is the write client. Client2 and WpfClient are two read clients.
+These clients send messages to server, and receive messages from server.
+
+#4: Client1 will add DBElement<string, PL_ListOfStrings> into csdb and DBElement<int, PL_String> into csdbint.
+Delete, modify, persist to xml and restore into db from xml.
+Client2 will make requests for query in csdb. The querys should be according to the key, key's pattern, string for metadata, timeStamp.
+
+#5:Client1 is a console write client. It can read a stream of data in xml to send the requests to server. And the number of the requests could be set by set the value of "public int writeNumber { get; set; }" in the client1.
+Perform of client and server can be measured the unit is ms, and the performance is displayed in the console client when it gets message.
+
+#7: Client2 and WpfClient are both read clients. Client2 will load the requests in the xml file to send them to server. And WpfClient could also send the requests to server. The received result of query of WpfClient could display in WpfClient.
+
+#8: Client2 and WpfClient can both display the responses. 
+In the Client2, the value of "public int readNumber { get; set; }" could be set to set number of requests of Client2.
+
+#9:
+
+#10: Set "public int writeNumber { get; set; }" in client1 and "public int readNumber { get; set; }" in Client2 could set the number of write and read.

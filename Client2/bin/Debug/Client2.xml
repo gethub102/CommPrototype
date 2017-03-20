@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<noSqlDb>
+  <element>
+    <key>query_key</key>
+    <name>key1</name>
+  </element>
+  <element>
+    <key>query_children</key>
+    <name>key1</name>
+  </element>
+  <element>
+    <key>query_pattern</key>
+    <name>k</name>
+  </element>
+  <element>
+    <key>query_meta</key>
+    <name>Edit</name>
+  </element>
+  <element>
+    <key>query_time</key>
+    <time1>11/27/15 3:17:36 PM</time1>
+    <time2>11/27/16 3:17:36 PM</time2>
+  </element>
+</noSqlDb>

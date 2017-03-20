@@ -1,0 +1,133 @@
+<noSqlDb>
+  <key>TestExec</key>
+  <element>
+    <name>TestExec.cs</name>
+    <descr>Executive creates lower-level parts and executes program</descr>
+    <timeStamp>10/5/2015 3:27:46 PM</timeStamp>
+    <keys>
+      <key>DBEngine</key>
+      <key>DBElement</key>
+      <key>QueryEngine</key>
+      <key>Display</key>
+      <key>PayloadWrapper</key>
+      <key>ItemFactory</key>
+      <key>DBExtensions</key>
+      <key>UtilityExtensions</key>
+    </keys>
+    <payload>
+      <item>Demonstrates that all requirements of Project #2 are met.</item>
+    </payload>
+  </element>
+  <key>DBElement</key>
+  <element>
+    <name>DBElement.cs</name>
+    <descr>Single database entity</descr>
+    <timeStamp>10/5/2015 3:27:46 PM</timeStamp>
+    <keys>
+      <key>PayloadWrapper</key>
+      <key>UtilityExtensions</key>
+    </keys>
+    <payload>
+      <item>Holds instance of payload type and metadata that describes its payload.</item>
+    </payload>
+  </element>
+  <key>PayloadWrapper</key>
+  <element>
+    <name>PayloadWrapper.cs</name>
+    <descr>Wrapper for payloads that implement required interface functions for each payload type.</descr>
+    <timeStamp>10/5/2015 3:27:46 PM</timeStamp>
+    <keys>
+      <key>UtilityExtensions</key>
+    </keys>
+    <payload>
+      <item>PL_String instance for string</item>
+      <item>PL_ListOfStrings instance for List of strings></item>
+    </payload>
+  </element>
+  <key>DBEngine</key>
+  <element>
+    <name>DBEngine.cs</name>
+    <descr>The noSqlDb database</descr>
+    <timeStamp>10/5/2015 3:27:46 PM</timeStamp>
+    <keys>
+      <key>DBElement</key>
+      <key>PayloadWrapper</key>
+      <key>UtilityExtensions</key>
+    </keys>
+    <payload>
+      <item>Holds a dictionary of Key/Value pairs.</item>
+      <item>Each Value instance is of type DBElement of Key, Data</item>
+    </payload>
+  </element>
+  <key>DBExtensions</key>
+  <element>
+    <name>DBExtensions.cs</name>
+    <descr>Defines extension methods for DBElement and DBEngine</descr>
+    <timeStamp>10/5/2015 3:27:46 PM</timeStamp>
+    <keys>
+      <key>DBElement</key>
+      <key>DBEngine</key>
+      <key>PayloadWrapper</key>
+      <key>UtilityExtensions</key>
+    </keys>
+    <payload>
+      <item>Defines extension methods to display DBElements and DBEngines</item>
+      <item>Defines FromXml extensions</item>
+    </payload>
+  </element>
+  <key>Display</key>
+  <element>
+    <name>Display.cs</name>
+    <descr>Provides views for applications</descr>
+    <timeStamp>10/5/2015 3:27:46 PM</timeStamp>
+    <keys>
+      <key>DBElement</key>
+      <key>DBEngine</key>
+      <key>PayloadWrapper</key>
+      <key>DBExtensions</key>
+      <key>UtilityExtensions</key>
+    </keys>
+    <payload>
+      <item>Accepts lambdas that render application specific views.</item>
+    </payload>
+  </element>
+  <key>ItemFactory</key>
+  <element>
+    <name>ItemFactory.cs</name>
+    <descr>Builds DBElements from a template</descr>
+    <timeStamp>10/5/2015 3:27:46 PM</timeStamp>
+    <keys>
+      <key>DBElement</key>
+      <key>PayloadWrapper</key>
+      <key>UtilityExtensions</key>
+    </keys>
+    <payload>
+      <item>Accepts lambdas that render application specific views.</item>
+    </payload>
+  </element>
+  <key>QueryEngine</key>
+  <element>
+    <name>QueryEngine.cs</name>
+    <descr>Used to search DBElements</descr>
+    <timeStamp>10/5/2015 3:27:46 PM</timeStamp>
+    <keys>
+      <key>DBElement</key>
+      <key>DBEngine</key>
+      <key>DBextensions</key>
+      <key>PayloadWrapper</key>
+      <key>UtilityExtensions</key>
+    </keys>
+    <payload>
+      <item>Accepts lambdas that render application specific views.</item>
+    </payload>
+  </element>
+  <key>UtilityExtensions</key>
+  <element>
+    <name>UtilityExtensions.cs</name>
+    <descr>Helper for displays</descr>
+    <timeStamp>10/5/2015 3:27:46 PM</timeStamp>
+    <payload>
+      <item>Provides title() extension method.</item>
+    </payload>
+  </element>
+</noSqlDb> 

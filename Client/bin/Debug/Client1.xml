@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<noSqlDb>
+  <element>
+    <key>key1</key>
+    <name>named key1</name>
+    <descr>sanitized description has no markup characters</descr>
+    <timeStamp>10/15/2015 5:45:28 AM</timeStamp>
+    <keys>
+      <key>one</key>
+    </keys>
+    <payload>
+      <item>payload key1</item>
+    </payload>
+  </element>
+  <element>
+    <key>123</key>
+    <name>named 123</name>
+    <descr>generic int</descr>
+    <timeStamp>10/15/2015 5:45:28 AM</timeStamp>
+    <payload>payload123</payload>
+  </element>	
+  <element>
+    <key>key2</key>
+    <name>named key2</name>
+    <descr>undescribed</descr>
+    <timeStamp>10/15/2015 5:45:31 AM</timeStamp>
+    <payload>
+      <item>payload key2</item>
+    </payload>
+  </element>
+  <element>
+    <key>one</key>
+    <name>named one</name>
+    <descr>undescribed</descr>
+    <timeStamp>10/15/2015 5:45:31 AM</timeStamp>
+    <payload>
+      <item>payload one</item>
+    </payload>
+  </element>	
+  <element>
+    <key>two</key>
+    <name>named two</name>
+    <descr>undescribed</descr>
+    <timeStamp>10/15/2015 5:45:31 AM</timeStamp>
+    <payload>
+      <item>payload two</item>
+    </payload>
+  </element>
+</noSqlDb>

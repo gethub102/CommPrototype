@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<noSqlDb>
+  <keyType>String</keyType>
+  <payloadType>PL_ListOfStrings</payloadType>
+  <key>key1</key>
+  <element>
+    <name>unnamed modified</name>
+    <descr>sanitized description has no markup characters</descr>
+    <timeStamp>11/19/15 4:20:19 PM</timeStamp>
+    <keys>
+      <key>one</key>
+      <key>two</key>
+      <key>three</key>
+      <key>four</key>
+      <key>alpha</key>
+      <key>beta</key>
+    </keys>
+    <payload>
+      <item>edit1</item>
+      <item>edit2</item>
+    </payload>
+  </element>
+  <key>key2</key>
+  <element>
+    <name>unnamed</name>
+    <descr>undescribed</descr>
+    <timeStamp>11/19/15 4:21:03 PM</timeStamp>
+    <payload>
+      <item>payload0</item>
+    </payload>
+  </element>
+</noSqlDb>

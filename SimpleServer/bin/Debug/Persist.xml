@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<noSqlDb>
+  <keyType>String</keyType>
+  <payloadType>PL_ListOfStrings</payloadType>
+  <key>key1</key>
+  <element>
+    <name>Edited named key1</name>
+    <descr>Edited sanitized description has no markup characters</descr>
+    <timeStamp>11/26/15 11:12:52 AM</timeStamp>
+    <keys>
+      <key>one</key>
+      <key>two</key>
+    </keys>
+    <payload>
+      <item>payload key1</item>
+      <item>payload key1</item>
+    </payload>
+  </element>
+  <key>one</key>
+  <element>
+    <name>named one</name>
+    <descr>undescribed</descr>
+    <timeStamp>11/26/15 11:12:54 AM</timeStamp>
+    <payload>
+      <item>payload one</item>
+    </payload>
+  </element>
+  <key>two</key>
+  <element>
+    <name>named two</name>
+    <descr>undescribed</descr>
+    <timeStamp>11/26/15 11:12:55 AM</timeStamp>
+    <payload>
+      <item>payload two</item>
+    </payload>
+  </element>
+</noSqlDb>
